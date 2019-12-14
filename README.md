@@ -1,24 +1,39 @@
-# README
+# Projeto Head Hunters
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é projeto é um trabalho de conclusão da primeira etapa de aulas presenciais do curso Treinadev02 realisado pela Campus Code (https://www.campuscode.com.br).
+Tem como objetivo testar o que foi aprendido em sala e colocar na prática desafios comuns de um produto desenvolvido em rails.
 
-Things you may want to cover:
+Foi entregue um breafing com algumas demandas de um site de ofertas de emprego
 
-* Ruby version
+#Funcionalidades básicas
+(descrição em andamento)
 
-* System dependencies
+## Ruby e Gem's:
 
-* Configuration
+* versão do ruby: ruby 2.6.3p62
 
-* Database creation
+* gem: rails
 
-* Database initialization
+* gem: sqlite3
 
-* How to run the test suite
+* gem: puma
 
-* Services (job queues, cache servers, search engines, etc.)
+* gem: gem devise
 
-* Deployment instructions
+* gem: capybara
 
-* ...
+## Como iniciar o projeto
+
+Para executar esse projeto você deve ter um computador, preferencialmente com
+Linux, com a linguagem de programação Ruby na versão 2.6.3
+
+Dentro do diretório do projeto, você deve instalar as dependências definidas no
+arquivo `Gemfile` com o comando `bundle install`.
+
+Com todas dependências instaladas, execute `rails server` e acesse
+`localhost:3000` em seu navegador.
+
+## Executando os testes
+
+Com todas dependências instaladas, como descrito na seção anterior, em seu
+terminal execute `rspec`.
