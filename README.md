@@ -5,22 +5,24 @@ Tem como objetivo testar o que foi aprendido em sala e colocar na prática desaf
 
 Foi entregue um breafing com algumas demandas de um site de ofertas de emprego
 
-#Funcionalidades básicas
+##Funcionalidades básicas
 (descrição em andamento)
 
 ## Ruby e Gem's:
 
 * versão do ruby: ruby 2.6.3p62
 
-* gem: rails
+* gem: rails ~> 6.0.1
 
-* gem: sqlite3
+* gem: sqlite3 ~> 1.4'
 
-* gem: puma
+* gem: puma ~> 4.1
 
-* gem: gem devise
+* gem: gem devise >= 4.7.1
 
-* gem: capybara
+* gem: capybara >= 2.15
+
+* gem: rspec-rails '~> 3.7'
 
 ## Como iniciar o projeto
 
