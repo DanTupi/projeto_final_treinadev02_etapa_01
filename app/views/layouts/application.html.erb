@@ -10,9 +10,30 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if user_signed_in?%>
+      <p> Olá <%= current_user.email %> </p>
+      <%= link_to 'Sair', destroy_user_session_path, method: :delete%>
+    <% else %>
+      <% if headhunter_signed_in?%>
 
+        <% else %>
+      <%= link_to 'Quero uma vaga', new_user_session_path%>
+      <% end %>
+    <% end %>
+
+    <% if headhunter_signed_in?%>
+      <p> Olá <%= current_headhunter.email %> </p>
+      <%= link_to 'Sair', destroy_user_session_path, method: :delete%>
+    <% else %>
+      <% if user_signed_in?%>
+
+        <% else %>
+      <%= link_to 'Ofereço uma vaga', new_headhunter_session_path%>
+        <% end %>
+    <% end %>
+
+    <%= notice %>
+    <%= alert %>
     <%= yield %>
   </body>
 </html>

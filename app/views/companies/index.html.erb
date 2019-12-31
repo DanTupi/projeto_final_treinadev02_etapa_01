@@ -1,0 +1,7 @@
+<ul>
+<% @companies.each do |companies| %>
+  <li><%= link_to companies.name, company_path(company) %></li>
+
+<% end %>
+
+</ul>
